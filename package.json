@@ -1,5 +1,5 @@
 {
-  "name": "instagram_on_rails",
+  "name": "insta_tonne",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
@@ -9,6 +9,7 @@
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
+  "license": "MIT",
   "devDependencies": {
     "webpack-dev-server": "^3.11.2"
   }
