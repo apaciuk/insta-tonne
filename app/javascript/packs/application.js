@@ -8,6 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("../bootstrap.js")
+require('active_storage_drag_and _drop')
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

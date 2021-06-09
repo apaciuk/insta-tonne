@@ -18,8 +18,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                        <%= link_to "Home", root_path, class: 'nav-link' %>
-                            <li class="nav-item"><a class="nav-link" href="#">Recent</a></li>
-                        <li class="nav-item"><a class="btn btn-primary nav-link" href="#">Upload</a></li>
+                        <li class="nav-item">
+                        <%= link_to "Recent", images_path, class: 'btn btn-link nav-link' %>
+                        </li>
+                        <li class="nav-item">
+                        <%= link_to "Upload", upload_path, class: 'btn btn-primary nav-link' %>
+                        </li>
                      
                     </ul>
              <ul class="navbar-nav">
@@ -29,7 +33,7 @@
                 <%= link_to current_user.full_name, profile_path(current_user.username), class: 'nav-link' %>
               </li>
               <li class="nav-item">
-                <%= link_to "Log Out", destroy_user_session_path, class: 'nav-link', method: :delete %>
+                <%= link_to "Log Out", destroy_user_session_path, class: 'btn btn-info nav-link', method: :delete %>
               </li>
             <% else %>
               <li class="nav-item">
@@ -48,9 +52,9 @@
         </nav>
         <!-- Page content-->
         <div class="container">
-        <div class="text-center mt-2">
-        <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+        <div class="mt-2">
+        <p class="notice text-muted"><%= notice %></p>
+       <p class="alert text-muted"><%= alert %></p>
        <%= yield %> 
        </div>
        </div>

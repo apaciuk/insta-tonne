@@ -21,15 +21,16 @@
               <%= f.label :remember_me %>
             </div>
           <% end %>
+          <br />
 
           <div class="actions">
             <%= f.submit "Sign In", class: 'btn btn-dark' %>
           </div>
+          <br />
+          <%= render "devise/shared/links" %>
         <% end %>
       </div>
     </div>
-
-    <%= render "devise/shared/links" %>
   </div>
 </div>
 

@@ -40,14 +40,17 @@
             <%= f.label :password_confirmation %>
             <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control' %>
           </div>
+          <br />
 
           <div class="actions">
             <%= f.submit "Sign up", class: 'btn btn-success' %>
           </div>
+          <br />
+          <%= render "devise/shared/links" %>
         <% end %>
 </div>
 </div>
-<%= render "devise/shared/links" %>
+
 </div>
 </div>
 
